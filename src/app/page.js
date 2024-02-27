@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react";
+import Table from "./components/table";
 
 export default function Home() {
   const [valueAmount, setValueAmount] = useState(0);
@@ -82,9 +83,7 @@ export default function Home() {
         visible
         ?
         <>
-        <h1>O valor total do financiamento é: R${data.value}</h1>
-        <h1>O prazo para pagamento é de: {data.prazo} meses</h1>
-        <h1>Os juros que serão pagos mensalmente é: {data.juros}%</h1>
+          <Table props={data} />
         </>
         :
         ""
