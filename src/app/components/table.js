@@ -35,7 +35,8 @@ export default function Table({ props }) {
                 parcela: Number(parcela).toFixed(2),
                 amortizacao: (parcela - juros).toFixed(2),
                 juros: juros,
-                saldo: Number(saldoDevedor).toFixed(2)
+                saldo: Number(saldoDevedor).toFixed(2),
+                taxaFixa: data?.juros
             });
             saldoDevedor -= (parcela - juros);
         }
@@ -55,7 +56,7 @@ export default function Table({ props }) {
                     </tr>
                 </thead>
                 <tbody>
-                    <Rows data={array} />
+                    <Rows data={array}/>
                 </tbody>
             </table>
         </div>
