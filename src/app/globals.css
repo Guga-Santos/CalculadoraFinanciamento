@@ -17,6 +17,16 @@
 }
 
 body {
- 
+
+}
+
+table {
+
+}
+
+th, td {
+  border: 1px slategray solid;
+  padding: 3px;
+  width: 20%;
 }
 

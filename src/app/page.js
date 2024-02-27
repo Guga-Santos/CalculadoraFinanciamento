@@ -28,7 +28,7 @@ export default function Home() {
   }
 
   return (
-    <main className="flex flex-col items-center justify-center bg-slate-400 h-screen">
+    <main className="flex flex-col items-center">
       <h1 className="text-4xl pb-20"> Minha Calculadora de Amortização</h1>
       {
       visible 
