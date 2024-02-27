@@ -46,8 +46,8 @@ export default function Table({ props }) {
     return (
         data && <div className="w-screen flex flex-col items-center">
             <table className="w-5/6 border-collapse">
-                <thead>
-                    <tr className="">
+                <thead className="">
+                    <tr className="cabeca">
                         <th>Mês</th>
                         <th>Parcela</th>
                         <th>Amortização</th>
